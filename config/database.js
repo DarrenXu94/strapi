@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'ds251548.mlab.com'),
+        host: env('DATABASE_HOST'),
         srv: env.bool('DATABASE_SRV', false),
-        port: env.int('DATABASE_PORT', 51548),
+        port: env.int('DATABASE_PORT'),
         database: env('DATABASE_NAME', 'strapi'),
         username: env('DATABASE_USERNAME', 'admin'),
-        password: env('DATABASE_PASSWORD', 'Admin123'),
+        password: env('DATABASE_PASSWORD'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', 'strapi'),
