@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
     "name": "blog"
@@ -9,24 +9,13 @@
     "timestamps": true
   },
   "attributes": {
-    "content": {
-      "type": "richtext"
-    },
     "Title": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "Content": {
+      "type": "richtext"
     }
   }
 }
