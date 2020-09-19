@@ -16,6 +16,9 @@
     },
     "Content": {
       "type": "richtext"
+    },
+    "MediaURL": {
+      "type": "string"
     }
   }
 }
